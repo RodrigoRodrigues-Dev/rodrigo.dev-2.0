@@ -1,0 +1,25 @@
+:root,
+[data-theme='dante'] {
+  @include emit-theme(dante);
+  @include emit-shared-tokens;
+}
+
+[data-theme='vergil'] {
+  @include emit-theme(vergil);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}

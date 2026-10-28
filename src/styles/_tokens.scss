@@ -1,0 +1,99 @@
+@forward 'tokens/fonts';
+@forward 'tokens/colors';
+@forward 'tokens/space';
+@forward 'tokens/type-compact';
+
+@use 'sass:map';
+@use 'sass:string';
+@use 'tokens/fonts' as fonts;
+@use 'tokens/colors' as colors;
+@use 'tokens/space' as space;
+@use 'tokens/type-home' as home;
+@use 'tokens/type-project' as project;
+@use 'tokens/type-compact' as compact;
+
+$type: map.merge(home.$type-home, project.$type-project);
+
+@function color($name) {
+  @if not map.has-key(map.get(colors.$themes, dante), $name) {
+    @error 'Unknown color `#{$name}`.';
+  }
+
+  @return string.unquote('var(--color-#{$name})');
+}
+
+@function space($step) {
+  @if not map.has-key(space.$space, $step) {
+    @error 'Unknown space `#{$step}`.';
+  }
+
+  @return string.unquote('var(--space-#{$step})');
+}
+
+@function gradient($name) {
+  @if not map.has-key(colors.$gradients, $name) {
+    @error 'Unknown gradient `#{$name}`.';
+  }
+
+  @return string.unquote('var(--gradient-#{$name})');
+}
+
+@mixin apply-type($style) {
+  font-family: #{map.get($style, family)};
+  font-weight: map.get($style, weight);
+  font-size: map.get($style, size);
+  line-height: map.get($style, line);
+  letter-spacing: map.get($style, tracking);
+}
+
+@mixin type($name, $viewport: desktop) {
+  $styles: $type;
+
+  @if $viewport == compact {
+    $styles: compact.$type-compact;
+  } @else if $viewport != desktop {
+    @error 'Unknown viewport `#{$viewport}`. Use desktop or compact.';
+  }
+
+  @if not map.has-key($styles, $name) {
+    @error 'Unknown type style `#{$name}` for `#{$viewport}`.';
+  }
+
+  @include apply-type(map.get($styles, $name));
+}
+
+@mixin emit-theme($theme) {
+  @each $name, $value in map.get(colors.$themes, $theme) {
+    --color-#{$name}: #{$value};
+  }
+}
+
+@mixin emit-shared-tokens {
+  @each $step, $value in space.$space {
+    --space-#{$step}: #{$value};
+  }
+
+  @each $name, $value in colors.$gradients {
+    --gradient-#{$name}: #{$value};
+  }
+
+  @each $name, $value in fonts.$fonts {
+    --font-#{$name}: #{$value};
+  }
+
+  @each $name, $style in $type {
+    --type-#{$name}-family: #{map.get($style, family)};
+    --type-#{$name}-weight: #{map.get($style, weight)};
+    --type-#{$name}-size: #{map.get($style, size)};
+    --type-#{$name}-line: #{map.get($style, line)};
+    --type-#{$name}-tracking: #{map.get($style, tracking)};
+  }
+
+  @each $name, $style in compact.$type-compact {
+    --type-compact-#{$name}-family: #{map.get($style, family)};
+    --type-compact-#{$name}-weight: #{map.get($style, weight)};
+    --type-compact-#{$name}-size: #{map.get($style, size)};
+    --type-compact-#{$name}-line: #{map.get($style, line)};
+    --type-compact-#{$name}-tracking: #{map.get($style, tracking)};
+  }
+}

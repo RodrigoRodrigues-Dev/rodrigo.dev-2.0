@@ -1,0 +1,249 @@
+@use 'fonts' as *;
+
+$type-home: (
+  logo: (
+    family: $font-sans,
+    weight: 600,
+    size: 22px,
+    line: 34.1px,
+    tracking: -0.7px
+  ),
+  logo-suffix: (
+    family: $font-sans,
+    weight: 400,
+    size: 22px,
+    line: 34.1px,
+    tracking: -0.7px
+  ),
+  logo-footer: (
+    family: $font-sans,
+    weight: 600,
+    size: 17px,
+    line: 26.35px,
+    tracking: -0.7px
+  ),
+  logo-footer-suffix: (
+    family: $font-sans,
+    weight: 400,
+    size: 17px,
+    line: 26.35px,
+    tracking: -0.7px
+  ),
+  meta: (
+    family: $font-mono,
+    weight: 400,
+    size: 13px,
+    line: 20px,
+    tracking: 0px
+  ),
+  label: (
+    family: $font-mono,
+    weight: 400,
+    size: 11px,
+    line: 18px,
+    tracking: 1.4px
+  ),
+  name: (
+    family: $font-sans,
+    weight: 600,
+    size: 148px,
+    line: 139.12px,
+    tracking: -6px
+  ),
+  surname: (
+    family: $font-sans,
+    weight: 600,
+    size: 130px,
+    line: 122.2px,
+    tracking: -5px
+  ),
+  role: (
+    family: $font-sans,
+    weight: 500,
+    size: 28px,
+    line: 36px,
+    tracking: 1.25px
+  ),
+  intro: (
+    family: $font-sans,
+    weight: 400,
+    size: 20px,
+    line: 28px,
+    tracking: 0px
+  ),
+  chapter: (
+    family: $font-serif,
+    weight: 500,
+    size: 80px,
+    line: 80px,
+    tracking: -4px
+  ),
+  kicker: (
+    family: $font-mono,
+    weight: 400,
+    size: 13px,
+    line: 20px,
+    tracking: 1.25px
+  ),
+  showcase: (
+    family: $font-condensed,
+    weight: 800,
+    size: 58px,
+    line: 55.68px,
+    tracking: 0.2px
+  ),
+  index: (
+    family: $font-serif,
+    weight: 500,
+    size: 40px,
+    line: 44px,
+    tracking: 0px
+  ),
+  project: (
+    family: $font-condensed,
+    weight: 800,
+    size: 32px,
+    line: 38px,
+    tracking: 0px
+  ),
+  summary: (
+    family: $font-sans,
+    weight: 400,
+    size: 18px,
+    line: 27px,
+    tracking: 0px
+  ),
+  note: (
+    family: $font-sans,
+    weight: 400,
+    size: 13px,
+    line: 20px,
+    tracking: 0px
+  ),
+  about: (
+    family: $font-sans,
+    weight: 400,
+    size: 28px,
+    line: 36.4px,
+    tracking: -0.4px
+  ),
+  prose: (
+    family: $font-sans,
+    weight: 400,
+    size: 18px,
+    line: 28px,
+    tracking: 0px
+  ),
+  caption: (
+    family: $font-sans,
+    weight: 500,
+    size: 16px,
+    line: 24px,
+    tracking: 0px
+  ),
+  formation: (
+    family: $font-sans,
+    weight: 400,
+    size: 17px,
+    line: 26px,
+    tracking: 0px
+  ),
+  workplace: (
+    family: $font-condensed,
+    weight: 800,
+    size: 42px,
+    line: 46.2px,
+    tracking: 0.3px
+  ),
+  workplace-role: (
+    family: $font-sans,
+    weight: 400,
+    size: 17px,
+    line: 26.35px,
+    tracking: 0px
+  ),
+  skill-kicker: (
+    family: $font-mono,
+    weight: 400,
+    size: 13px,
+    line: 20px,
+    tracking: 1.1px
+  ),
+  skill-title: (
+    family: $font-condensed,
+    weight: 800,
+    size: 58px,
+    line: 56.84px,
+    tracking: 0.2px
+  ),
+  theme-name: (
+    family: $font-serif,
+    weight: 500,
+    size: 28px,
+    line: 28px,
+    tracking: 0px
+  ),
+  ordinal: (
+    family: $font-serif,
+    weight: 500,
+    size: 30px,
+    line: 30px,
+    tracking: 0px
+  ),
+  skill-group: (
+    family: $font-condensed,
+    weight: 800,
+    size: 37px,
+    line: 37px,
+    tracking: 0.15px
+  ),
+  skill-arrow: (
+    family: $font-sans,
+    weight: 400,
+    size: 24px,
+    line: 36px,
+    tracking: 0px
+  ),
+  hint: (
+    family: $font-sans,
+    weight: 400,
+    size: 14px,
+    line: 21px,
+    tracking: 0px
+  ),
+  skill: (
+    family: $font-sans,
+    weight: 600,
+    size: 60px,
+    line: 60px,
+    tracking: -2px
+  ),
+  tag: (
+    family: $font-mono,
+    weight: 400,
+    size: 13px,
+    line: 20px,
+    tracking: 0.8px
+  ),
+  tag-label: (
+    family: $font-sans,
+    weight: 400,
+    size: 17px,
+    line: 25.5px,
+    tracking: 0px
+  ),
+  nav: (
+    family: $font-condensed,
+    weight: 600,
+    size: 14px,
+    line: 20px,
+    tracking: 0px
+  ),
+  nav-current: (
+    family: $font-condensed,
+    weight: 800,
+    size: 26px,
+    line: 31px,
+    tracking: 0px
+  )
+);

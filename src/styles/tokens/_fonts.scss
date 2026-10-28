@@ -1,0 +1,11 @@
+$font-sans: 'var(--font-barlow), sans-serif';
+$font-condensed: 'var(--font-barlow-condensed), sans-serif';
+$font-serif: 'var(--font-cormorant), serif';
+$font-mono: 'var(--font-ibm-plex-mono), monospace';
+
+$fonts: (
+  sans: $font-sans,
+  condensed: $font-condensed,
+  serif: $font-serif,
+  mono: $font-mono
+);

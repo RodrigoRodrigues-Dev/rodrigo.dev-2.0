@@ -1,0 +1,45 @@
+$themes: (
+  dante: (
+    page: #f3f0eb,
+    surface: #eae4de,
+    raised: #292629,
+    ink: #282426,
+    deep: #211f21,
+    text: #554f4d,
+    text-strong: #282426,
+    text-muted: #d0c7c9,
+    text-on-dark: #cac3c1,
+    text-on-brand: #ffffff,
+    faint: #a49b9f,
+    brand: #a73143,
+    accent: #ea9eab,
+    line: #50444a,
+    line-strong: #696265,
+    line-soft: #d9d1ca
+  ),
+  vergil: (
+    page: #f1f1f1,
+    surface: #e7e7e8,
+    raised: #2b2c30,
+    ink: #1f2021,
+    deep: #1f2021,
+    text: #4d555e,
+    text-strong: #1f2021,
+    text-muted: #d0d2d5,
+    text-on-dark: #c6ccd2,
+    text-on-brand: #ffffff,
+    faint: #9b9fa4,
+    brand: #316ea7,
+    accent: #b2caea,
+    line: #444a50,
+    line-strong: #62676d,
+    line-soft: #d0d2d5
+  )
+);
+
+$gradients: (
+  surface: linear-gradient(to bottom, #1f2021, #2b2c30),
+  action: linear-gradient(to bottom, #074666, #316ea7),
+  divider-start: linear-gradient(to bottom, #f1f1f1, #316ea7),
+  divider-end: linear-gradient(to bottom, #316ea7, #f1f1f1)
+);

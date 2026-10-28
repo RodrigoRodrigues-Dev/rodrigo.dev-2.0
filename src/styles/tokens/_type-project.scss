@@ -1,0 +1,102 @@
+@use 'fonts' as *;
+
+$type-project: (
+  hero: (
+    family: $font-condensed,
+    weight: 800,
+    size: 112px,
+    line: 112px,
+    tracking: 0px
+  ),
+  lead: (
+    family: $font-sans,
+    weight: 400,
+    size: 28px,
+    line: 38px,
+    tracking: 0px
+  ),
+  body: (
+    family: $font-sans,
+    weight: 400,
+    size: 20px,
+    line: 30px,
+    tracking: 0px
+  ),
+  small: (
+    family: $font-sans,
+    weight: 400,
+    size: 16px,
+    line: 24px,
+    tracking: 0px
+  ),
+  title: (
+    family: $font-condensed,
+    weight: 800,
+    size: 32px,
+    line: 36px,
+    tracking: 0px
+  ),
+  section: (
+    family: $font-condensed,
+    weight: 800,
+    size: 52px,
+    line: 56px,
+    tracking: 0px
+  ),
+  number: (
+    family: $font-serif,
+    weight: 500,
+    size: 72px,
+    line: 80px,
+    tracking: 0px
+  ),
+  number-small: (
+    family: $font-serif,
+    weight: 500,
+    size: 44px,
+    line: 52px,
+    tracking: 0px
+  ),
+  decision: (
+    family: $font-condensed,
+    weight: 800,
+    size: 28px,
+    line: 34px,
+    tracking: 0px
+  ),
+  contact-number: (
+    family: $font-serif,
+    weight: 500,
+    size: 62px,
+    line: 62px,
+    tracking: -4px
+  ),
+  contact-title: (
+    family: $font-condensed,
+    weight: 800,
+    size: 89px,
+    line: 83.66px,
+    tracking: 0.3px
+  ),
+  contact-copy: (
+    family: $font-sans,
+    weight: 400,
+    size: 19px,
+    line: 28.5px,
+    tracking: 0px
+  ),
+  button: (
+    family: $font-condensed,
+    weight: 800,
+    size: 33px,
+    line: 33px,
+    tracking: 0.4px
+  ),
+  button-icon: (
+    family: $font-mono,
+    weight: 400,
+    size: 30px,
+    line: 30px,
+    tracking: 0.4px
+  )
+);

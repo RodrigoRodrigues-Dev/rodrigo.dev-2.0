@@ -1,0 +1,228 @@
+@use 'fonts' as *;
+
+$type-compact: (
+  logo-footer: (
+    family: $font-sans,
+    weight: 600,
+    size: 16px,
+    line: 24.8px,
+    tracking: -0.7px
+  ),
+  logo-footer-suffix: (
+    family: $font-sans,
+    weight: 400,
+    size: 16px,
+    line: 24.8px,
+    tracking: -0.7px
+  ),
+  name: (
+    family: $font-sans,
+    weight: 600,
+    size: 52px,
+    line: 58px,
+    tracking: -1px
+  ),
+  surname: (
+    family: $font-sans,
+    weight: 600,
+    size: 48px,
+    line: 54px,
+    tracking: -1px
+  ),
+  role: (
+    family: $font-sans,
+    weight: 500,
+    size: 20px,
+    line: 28px,
+    tracking: 0px
+  ),
+  intro: (
+    family: $font-sans,
+    weight: 400,
+    size: 17px,
+    line: 25px,
+    tracking: 0px
+  ),
+  chapter: (
+    family: $font-serif,
+    weight: 500,
+    size: 54px,
+    line: 64px,
+    tracking: 0px
+  ),
+  showcase: (
+    family: $font-condensed,
+    weight: 800,
+    size: 36px,
+    line: 38px,
+    tracking: 0px
+  ),
+  index: (
+    family: $font-serif,
+    weight: 500,
+    size: 32px,
+    line: 36px,
+    tracking: 0px
+  ),
+  project: (
+    family: $font-condensed,
+    weight: 800,
+    size: 30px,
+    line: 36px,
+    tracking: 0px
+  ),
+  summary: (
+    family: $font-sans,
+    weight: 400,
+    size: 16px,
+    line: 24px,
+    tracking: 0px
+  ),
+  workplace: (
+    family: $font-condensed,
+    weight: 800,
+    size: 36px,
+    line: 40px,
+    tracking: 0px
+  ),
+  skill-number: (
+    family: $font-serif,
+    weight: 500,
+    size: 50px,
+    line: 50px,
+    tracking: -2px
+  ),
+  skill-title: (
+    family: $font-condensed,
+    weight: 800,
+    size: 39px,
+    line: 39px,
+    tracking: 0.2px
+  ),
+  ordinal: (
+    family: $font-serif,
+    weight: 500,
+    size: 23px,
+    line: 23px,
+    tracking: 0px
+  ),
+  skill-group: (
+    family: $font-condensed,
+    weight: 800,
+    size: 23px,
+    line: 23px,
+    tracking: 0.15px
+  ),
+  skill: (
+    family: $font-sans,
+    weight: 600,
+    size: 38px,
+    line: 38px,
+    tracking: -0.8px
+  ),
+  tag-label: (
+    family: $font-sans,
+    weight: 400,
+    size: 15px,
+    line: 22.5px,
+    tracking: 0px
+  ),
+  nav: (
+    family: $font-condensed,
+    weight: 600,
+    size: 16px,
+    line: 22px,
+    tracking: 0px
+  ),
+  hero: (
+    family: $font-condensed,
+    weight: 800,
+    size: 50px,
+    line: 52px,
+    tracking: 0px
+  ),
+  lead: (
+    family: $font-sans,
+    weight: 400,
+    size: 24px,
+    line: 32px,
+    tracking: 0px
+  ),
+  title: (
+    family: $font-condensed,
+    weight: 800,
+    size: 28px,
+    line: 34px,
+    tracking: 0px
+  ),
+  section: (
+    family: $font-condensed,
+    weight: 800,
+    size: 34px,
+    line: 38px,
+    tracking: 0px
+  ),
+  number: (
+    family: $font-serif,
+    weight: 500,
+    size: 40px,
+    line: 44px,
+    tracking: 0px
+  ),
+  number-small: (
+    family: $font-serif,
+    weight: 500,
+    size: 30px,
+    line: 34px,
+    tracking: 0px
+  ),
+  decision: (
+    family: $font-condensed,
+    weight: 800,
+    size: 25px,
+    line: 29px,
+    tracking: 0px
+  ),
+  summary-tight: (
+    family: $font-sans,
+    weight: 400,
+    size: 18px,
+    line: 24px,
+    tracking: 0px
+  ),
+  next-project: (
+    family: $font-condensed,
+    weight: 800,
+    size: 36px,
+    line: 49px,
+    tracking: 0px
+  ),
+  contact-number: (
+    family: $font-serif,
+    weight: 500,
+    size: 58px,
+    line: 64px,
+    tracking: 0px
+  ),
+  contact-title: (
+    family: $font-condensed,
+    weight: 800,
+    size: 52px,
+    line: 54px,
+    tracking: 0px
+  ),
+  contact-copy: (
+    family: $font-sans,
+    weight: 400,
+    size: 18px,
+    line: 26px,
+    tracking: 0px
+  ),
+  email: (
+    family: $font-sans,
+    weight: 400,
+    size: 14px,
+    line: 22px,
+    tracking: 0px
+  )
+);
